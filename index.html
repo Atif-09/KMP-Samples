@@ -69,7 +69,102 @@
         shared: ["UI", "Model", "Networking"],
         libraries: ["kotlinx-serialization", "kotlinx-datetime", "kotlinx-coroutines", "ktor-client", "accompanist"],
         ui: ["Jetpack Compose on Android", "SwiftUI on iOS"]
-      }
+      },
+
+      {
+  name: "KMM RSS Reader",
+  description: "A sample application for consuming RSS feeds designed to show how Kotlin Multiplatform can be used in production. The UI is implemented natively, but there is an experimental branch showing how Compose Multiplatform could be used on iOS and desktop. Networking is accomplished using the Ktor HTTP Client, while XML parsing is implemented natively. The Redux architecture is used for sharing UI State.",
+  link: "https://github.com/Kotlin/kmm-production-sample",
+  shared: ["Model", "Networking", "UI state", "Data storage"],
+  libraries: ["kotlinx-serialization", "kotlinx-coroutines", "ktor-client", "voyager", "coil", "multiplatform-settings", "napier", "SQLDelight"],
+  ui: ["Jetpack Compose on Android", "Compose Multiplatform on iOS and desktop (on experimental branch)", "SwiftUI on iOS"]
+},
+{
+  name: "Tivi",
+  description: "An application for tracking television shows via Trakt.tv. Uses Coroutines for concurrency and Compose for the UI. Designed to showcase the latest libraries and tools.",
+  link: "https://github.com/chrisbanes/tivi",
+  shared: ["UI", "Model", "Networking"],
+  libraries: ["kotlinx.serialization", "kotlinx.coroutines", "ktor-client", "lyricist", "circuit", "firebase", "SQLDelight"],
+  ui: ["Jetpack Compose on Android", "Compose Multiplatform on iOS and desktop"]
+},
+{
+  name: "People In Space",
+  description: "A showcase of the many different platforms on which Kotlin Multiplatform can run. The use case is to show the number of people currently in space and the position of the International Space Station.",
+  link: "https://github.com/joreilly/PeopleInSpace",
+  shared: ["Model", "Networking", "Data storage"],
+  libraries: ["kotlinx.serialization", "kotlinx.coroutines", "kotlinx-datetime", "ktor-client", "koin", "multiplatform-settings", "SQLDelight"],
+  ui: ["Jetpack Compose on Android", "Compose Multiplatform on iOS, desktop, and web", "SwiftUI on iOS, macOS, and watchOS"]
+},
+
+{
+  name: "Focus Bloom",
+  description: "A productivity and time management application. Allows users to schedule tasks and provides feedback on their accomplishments.",
+  link: "https://github.com/JoelKanyi/FocusBloom",
+  shared: ["UI", "Model", "Animation", "Data storage"],
+  libraries: ["kotlinx.serialization", "kotlinx.coroutines", "kotlinx.datetime", "koin", "voyager", "multiplatform-settings", "SQLDelight"],
+  ui: ["Jetpack Compose on Android", "Compose Multiplatform on iOS and desktop"]
+},
+
+{
+  name: "Recipe App",
+  description: "A demonstration application for viewing recipes. Showcases the use of animations.",
+  link: "https://github.com/SEAbdulbasit/recipe-app",
+  shared: ["UI", "Model", "Data storage"],
+  libraries: ["kotlinx.coroutines"],
+  ui: ["Jetpack Compose on Android", "Compose Multiplatform on iOS and desktop"]
+},
+{
+  name: "Kotlin Multiplatform Sample",
+  description: "A simple calculator application. Showing how to integrate Kotlin and native code using expected and actual declarations.",
+  link: "https://github.com/Kotlin/kmm-basic-sample",
+  shared: ["Algorithms"],
+  libraries: [],
+  ui: ["Jetpack Compose on Android", "SwiftUI"]
+},
+{
+  name: "KaMPKit",
+  description: "A collection of code and tools for Kotlin Multiplatform development. Designed to showcase libraries, architectural choices, and best practices when building Kotlin Multiplatform applications. The use case is downloading and displaying information about dog breeds.",
+  link: "https://github.com/touchlab/KaMPKit",
+  shared: ["Model", "Networking", "ViewModel", "Data storage"],
+  libraries: ["ktor-client", "koin", "multiplatform-settings", "kermit", "SQLDelight"],
+  ui: ["Jetpack Compose on Android", "SwiftUI on iOS"]
+},
+{
+  "name": "D-KMP-sample",
+  "description": "A sample application for the Declarative UIs with Kotlin MultiPlatform architecture. The use case is retrieving and displaying vaccination statistics for different countries.",
+  "link": "https://github.com/dbaroncelli/D-KMP-sample",
+  "shared": ["Networking", "Data storage", "ViewModel", "Navigation"],
+  "libraries": ["ktor-client", "multiplatform-settings", "SQLDelight"],
+  "ui": ["Jetpack Compose on Android", "SwiftUI on iOS"]
+},
+
+{
+  "name": "Notflix",
+  "description": "An application that consumes data from The Movie Database to display current trending, upcoming, and popular movies and TV shows. Requires that you create an API key with The Movie Database.",
+  "link": "https://github.com/VictorKabata/Notflix",
+  "shared": ["Model", "Networking", "Caching", "ViewModel"],
+  "libraries": ["kotlinx-coroutines", "kotlinx-serialization", "kotlinx-datetime", "ktor-client", "multiplatform-settings", "napier"],
+  "ui": ["Jetpack Compose on Android", "SwiftUI on iOS"]
+},
+{
+  "name": "Twine - RSS Reader",
+  "description": "Twine is a multiplatform RSS reader app built using Kotlin and Compose Multiplatform. It features a nice user interface and experience to browse through the feeds and supports Material 3 content-based dynamic theming.",
+  "link": "https://github.com/msasikanth/twine",
+  "shared": ["Model", "Networking", "Data Storage", "UI"],
+  "libraries": ["kotlinx-coroutines", "kotlinx-serialization", "kotlinx-datetime", "ktor-client", "napier", "decompose"],
+  "ui": ["Compose Multiplatform on Android and iOS"]
+},
+{
+  "name": "Shopping By KMP",
+  "description": "A cross-platform application built using Jetpack Compose Multiplatform, allowing users to browse, search, and purchase products from a shopping catalog on Android and iOS.",
+  "link": "https://github.com/razaghimahdi/Shopping-By-KMP",
+  "shared": ["Model", "Networking", "Data Storage", "UI", "ViewModel", "Animation", "Navigation", "UI state", "Use Case", "Unit Test", "UI Test"],
+  "libraries": ["kotlinx-coroutines", "kotlinx-serialization", "kotlinx-datetime", "ktor-client", "datastore", "koin", "Compose Navigation", "Coil", "Kotest"],
+  "ui": ["Compose Multiplatform on Android and iOS"]
+}
+
+
+      
     ];
 
     const projectContainer = document.getElementById('projects');
